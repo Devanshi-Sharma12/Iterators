@@ -10,19 +10,12 @@ class CSVIterator:
         return self
 
     def __next__(self) -> List[str]:
-        if self.file is None:
-            raise StopIteration
-
         try:
             line = next(self.iterator)  
             row = line.strip().split(',') 
             return row
         except:
             StopIteration
-
-    def __del__(self):
-        if self.file:
-            self.file.close()
 
 # Usage example:
 csv_iter = CSVIterator('C:\\Users\\DELL\\OneDrive\\Desktop\\experiment\\most_wickets_t20_world_cup_2024.csv')
