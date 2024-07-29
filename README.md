@@ -144,7 +144,7 @@ Simplifies code structure for iteration tasks.
 
 ### Working with csv files using iterators
 
-Reading without an iterator:
+Reading with an iterator:
 ```
 import csv
 import psutil
@@ -172,7 +172,7 @@ OUTPUT:
 Memory Usage without Iterators: 20480 bytes
 ```
 
-Reading with an iterator
+Reading without an iterator
 ```
 import csv
 import psutil
