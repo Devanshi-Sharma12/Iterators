@@ -14,7 +14,7 @@ class CSVIterator:
         except:
             StopIteration
 
-csv_iter = CSVIterator('C:\\Users\\DELL\\OneDrive\\Desktop\\experiment\\most_wickets_t20_world_cup_2024.csv')
+csv_iter = CSVIterator('C:\\Users\\DELL\\OneDrive\\Desktop\\experiment\\most_wickets_t20_world_cup_2024.csv') # take path as input
 
 for row in csv_iter:
     print(row) 
